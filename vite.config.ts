@@ -10,7 +10,7 @@ export default defineConfig({
       '/api': {
         target: 'http://jsonplaceholder.typicode.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '') //覆盖位置
+        rewrite: (path) => path.replace(/^\/api/, '') //覆盖位置  跨域解决
       }
     }
   }
